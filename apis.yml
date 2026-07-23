@@ -1,9 +1,29 @@
 aid: antimatter-systems
 name: Antimatter Systems
-description: Antimatter Systems is a company surfaced as a portfolio company of version-one-ventures and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Antimatter Systems is an education technology company building a peer-to-peer learning
+  network where students demonstrate mastery by making memes, puzzles, and games rather than by writing
+  essays or sitting tests. Founded by Jonathan Libov, the company raised a $2M seed round led by Version
+  One Ventures in 2023, joined by Spacecadet, Ordinary Holdings, Haystack and Compound. Its classroom
+  product lets teachers create meme-based activities with deadlines and instructions, invite students by
+  shareable link, moderate submissions, restrict learners to view-only, work from a library of
+  pre-approved templates, catch unedited-image uploads with plagiarism detection, and grade every
+  submission in one place; the company states it should be free for schools. Antimatter also ships a
+  Sorcerer AI instructional coach plus the consumer Antimatter: Creator and Antimatter: Universe iOS
+  apps. The platform runs on the web at playantimatter.com. As of July 2026 the company publishes no
+  public API, developer portal, SDKs, or machine-readable API specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/antimatter-systems/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://antimatter.systems/static/images/twitter-card.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,12 +32,52 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Education
+- EdTech
+- Learning
+- Classroom
+- Memes
+- Games
+- Community
+- Consumer
 apis: []
+common:
+- type: Website
+  url: https://antimatter.systems/
+- type: SignUp
+  url: https://playantimatter.com
+- type: PrivacyPolicy
+  url: https://antimatter.systems/privacy
+- type: Support
+  url: mailto:support@antimatter.systems
+- type: GitHubOrganization
+  url: https://github.com/antimatter-systems
+- type: X
+  url: https://twitter.com/antimattersys
+- type: YouTube
+  url: https://www.youtube.com/@antimattersys
+- type: Reddit
+  url: https://www.reddit.com/r/antimattersys/
+- type: Instagram
+  url: https://www.instagram.com/sendbubble/
+- type: TikTok
+  url: https://tiktok.com/@sendbubble
+- type: Facebook
+  url: https://www.facebook.com/profile.php?id=100086578043477
+- type: LLMsTxt
+  url: llms/antimatter-systems-llms.txt
+- type: DomainSecurity
+  url: security/antimatter-systems-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

@@ -1,0 +1,98 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of antimatter.systems, playantimatter.com and candidate developer subdomains
+note: >-
+  Antimatter Systems publishes no /.well-known/ discovery surface and no developer
+  subdomain. Every standard document and every candidate developer host was probed live
+  on 2026-07-19; all returned 404 or failed to resolve. Recorded as a negative result so
+  re-runs are cheap. No WellKnown or SecurityTxt pointer is wired in apis.yml because
+  nothing is genuinely published.
+hosts:
+- host: https://antimatter.systems
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /api-catalog
+    status: 404
+  - path: /robots.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /terms
+    status: 404
+  - path: /pricing
+    status: 404
+  - path: /faq
+    status: 404
+- host: https://playantimatter.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+candidate_developer_hosts:
+- host: https://api.antimatter.systems
+  status: 404
+  note: resolves, serves 404 — no API surface
+- host: https://docs.antimatter.systems
+  status: 000
+  note: does not resolve
+- host: https://developer.antimatter.systems
+  status: 000
+  note: does not resolve
+published_pages_verified:
+- url: https://antimatter.systems/
+  status: 200
+- url: https://antimatter.systems/foreducators
+  status: 200
+- url: https://antimatter.systems/classroom
+  status: 200
+- url: https://antimatter.systems/certifications
+  status: 200
+- url: https://antimatter.systems/pd
+  status: 200
+- url: https://antimatter.systems/privacy
+  status: 200
+- url: https://playantimatter.com
+  status: 200
+- url: https://playantimatter.com/sorcerer
+  status: 200
+broken_links_on_provider_site:
+- url: https://blog.antimatter.systems
+  status: 000
+  note: >-
+    Linked from the antimatter.systems homepage footer. CNAMEs to antimatter.ghost.io,
+    but the custom domain does not complete TLS and the Ghost origin returns HTTP 402
+    Payment Required — the blog subscription appears lapsed. No Blog pointer is wired in
+    apis.yml because the blog does not currently serve.
+- url: https://calendly.com/antimattersys/antimatter-for-educators
+  status: 404
+  note: '"Schedule an intro call" link on the homepage is dead.'
+registries_checked:
+  note: >-
+    No first-party Antimatter Systems client libraries exist on any public registry.
+    npm search returns only unrelated projects (@antimatter-audio/*, @antimatterium/*,
+    @antimatter-dimensions/*). PyPI has no antimatter-systems project (JSON API 404 —
+    a 200 on the HTML project page was a bot-challenge interstitial, not a package).
+  npm: none
+  pypi: none
+github_org:
+  url: https://github.com/antimatter-systems
+  status: 200
+  public_repos: 3
+  note: >-
+    No API specifications, SDKs, or first-party libraries. sample-canvas-project is a
+    CSS demo last pushed 2022-04-21; tldraw and supabase-grafana are unmodified forks.
+disambiguation: >-
+  Do not conflate this company with Antimatter (antimatter.io / docs.antimatter.io), an
+  unrelated GenAI data access-control vendor that does publish a REST API, OpenAPI spec,
+  CLI and Python SDK. Antimatter Systems (antimatter.systems / playantimatter.com) is an
+  education technology company and publishes none of those.
