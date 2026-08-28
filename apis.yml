@@ -12,6 +12,17 @@ description: 'Antimatter Systems is an education technology company building a p
   apps. The platform runs on the web at playantimatter.com. As of July 2026 the company publishes no
   public API, developer portal, SDKs, or machine-readable API specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/antimatter-systems/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
